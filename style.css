@@ -1,0 +1,301 @@
+@import "reset.css";
+
+body {
+	font-family: georgia;
+	line-height: 1.2;
+	/* background-color: #253a56; */
+	/* background-color: #152a46; */
+	background-color: #051a36;
+	color: #eeeeee;
+	font-size: 1.2em;
+}
+	.wrapper {
+		float: left;
+		width: 600px;
+		margin: 3em;
+	}
+		.wrapper > *:first-child {
+			margin-top: 0;
+		}
+		a {
+			color: #ffb200; /* orange */
+			text-decoration: none;
+			cursor: pointer; /* even if no href */
+		}
+			a:visited {
+				color: #bb7f00;
+			}
+			a:hover,
+			a:active,
+			a:focus {
+				color: #ffdC2A; /* yellow */
+			}
+		/* TODO: further experimentation here */
+		select, input, textarea {
+			border: 1px solid #888888;
+			font-size: 1em;
+			font-family: inherit;
+			font-weight: inherit;
+			background-color: transparent;
+			color: inherit;
+		}
+		#page { margin: 0 0 3em 0; }
+		#top { margin: 0 0 3em 0; }
+		h1,
+		#content,
+		#ancestors,
+		#addthis,
+		#controls,
+		#comments {
+			margin: 3em 0;
+		}
+		#footer {
+			margin: 3em 0 0 0;
+		}
+			#footer p {
+				display: inline;
+			}
+
+		form.miniform {
+			display: inline;
+			border-width: 0;
+			margin: 0;
+			padding: 0;
+		}
+			form.miniform p {
+				display: inline;
+				border-width: 0;
+				margin: 0;
+				padding: 0;
+			}
+
+		h1 {
+			font-size: 3em;
+			font-weight: bold;
+			margin-bottom: 1em;
+		}
+		.breadcrumbs {
+			font-size: 0.8em;
+		}
+			.breadcrumb:after {
+				content: " Â» ";
+			}
+		h2 {
+			color: #eeeeee;
+			font-size: 2em;
+			font-weight: bold;
+			border-bottom: 1px solid #606060;
+		}
+		#content {
+		}
+			#content > *:first-child {
+				margin-top: 0;
+			}
+			.controls {
+				text-align: center;
+			}
+			button {
+				/* should just look like a regular hyperlink */
+				margin: 0;
+				border-width: 0;
+				padding: 0;
+				background-color: transparent;
+				font-family: georgia;
+				font-size: 1em;
+				color: #ffb200;
+				cursor: pointer;
+			}
+				button:hover,
+				button:active,
+				button:focus {
+					color: #eeeeee;
+				}
+			.control {
+				/* for both <div>s, <a>s and <button>s*/
+				display: inline;
+				font-size: 0.8em;
+				margin-left: 0.5em;
+				margin-right: 0.5em;
+			}
+			h3 {
+				margin: 2em 0 1em;
+				font-size: 1.25em;
+				font-weight: bold;
+				color: #98afd4;
+				border-bottom: 1px dotted #606060;
+			}
+			h4 {
+				color: #75a7f2;
+				font-weight: bold;
+				margin: 1em 0;
+			}
+				h4 a {
+					font-weight: bold;
+				}
+			h5 {
+				font-weight: bold;
+				margin: 1em 0;
+			}
+			p {
+				margin: 1em 0;
+			}
+			p.rant {
+				font-weight: bold;
+				font-size: 2em;
+			}
+			blockquote {
+				margin: 1em 2em;
+			}
+				blockquote > *:first-child {
+					margin-top: 0;
+				}
+				blockquote > *:last-child {
+					margin-bottom: 0;
+				}
+			hr {
+				height: 0;
+				border-width: 0;
+				border-top: 1px dotted #a0a0a0;
+			}
+			big {
+				font-size: 1.25em;
+			}
+			small {
+				font-size: 0.8em;
+			}
+			sup {
+				font-size: 0.8em;
+				vertical-align: super;
+			}
+			sub {
+				font-size: 0.8em;
+				vertical-align: sub;
+			}
+			var,
+			em,
+			i {
+				font-style: italic;
+			}
+			i em,
+			em i {
+				font-style: normal;
+			}
+			strong {
+				font-weight: bold;
+			}
+			pre {
+				font-size: 0.8em;
+				margin: 1em 2em;
+				font-family: consolas, courier new;
+				color: #ffd980; /* yellow */
+			}
+			code,
+			tt,
+			kbd {
+				font-family: consolas, courier new;
+				color: #ffd980; /* yellow */
+			}
+			var {
+				color: #78C6B9; /* pale green */
+			}
+			table {
+				border: 1px solid #555555;
+				border-collapse: collapse;
+				font-size: 0.8em;
+			}
+				thead {
+				}
+				tfoot {
+				}
+				tbody {
+				}
+					tr {
+					}
+						th {
+							border: 1px solid #555555;
+							font-weight: bold;
+							color: #75a7f2;
+							padding: 0.5em;
+						}
+						td {
+							border: 1px solid #555555;
+							padding: 0.5em;
+						}
+							th > *:first-child,
+							td > *:first-child {
+								margin-top: 0;
+							}
+							th > *:last-child,
+							td > *:last-child {
+								margin-bottom: 0;
+							}
+			ul,
+			ol {
+				margin: 1em 0;
+			}
+			ol {
+				list-style-type: decimal;
+			}
+			ul {
+				list-style-type: disc;
+			}
+			ul ul {
+				list-style-type: circle;
+			}
+			ul ul ul {
+				list-style-type: square;
+			}
+				li {
+					margin-left: 2em;
+				}
+			dl {
+				margin: 1em 0 1em 2em;
+			}
+				dt {
+					margin: 1em 0;
+					font-weight: bold;
+				}
+				dd {
+					margin: 1em 0;
+				}
+			#content > *:last-child {
+				margin-bottom: 0;
+			}
+		#addthis {
+			text-align: center;
+		}
+		#ancestors {
+			font-weight: bold;
+		}
+		#comments {
+		}
+			#comments > *:first-child {
+				margin-top: 0;
+			}
+			.comment {
+				margin: 2em 0 1em;
+			}
+			h4.adminComment {
+				color: #00dddd;
+			}
+			.hiddenComment {
+				opacity: 0.5;
+			}
+			#comments > *:last-child {
+				margin-bottom: 0;
+			}
+		#footer {
+			border-top: 1px solid #606060;
+			font-size: 0.8em;
+			padding-top: 1em;
+			text-align: center;
+			color: #999999;
+		}
+			.footerlink {
+				display: inline;
+				margin: 0 0.3em;
+			}
+
+/* Ra */
+.tworld { text-align: right; }
+.between { text-align: center; }
