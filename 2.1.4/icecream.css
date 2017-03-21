@@ -8,6 +8,8 @@ body{
 h1 {
 	font-size: 13em;
 	text-align: center;
+	color:#FFFFF0
+;
 }
 
 table {
@@ -20,12 +22,14 @@ table {
 
 tr {
 	border: 1px solid #ffffff;
+	font-style: "Josefin Sans";
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#F3E5AB; 
 }
 
 th {
 	text-align: center;
+	font-style: "Josefin Sans";
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #F3E5AB;
 }
