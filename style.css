@@ -22,9 +22,6 @@ body {
 			text-decoration: none;
 			cursor: pointer; /* even if no href */
 		}
-			a:visited {
-				color: #bb7f00;
-			}
 			a:hover,
 			a:active,
 			a:focus {
